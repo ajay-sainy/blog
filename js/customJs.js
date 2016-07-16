@@ -1,7 +1,7 @@
 (function() {
   var app = angular.module('blogApp', ['ngRoute', 'infinite-scroll', 'ngSanitize']);
-  var serverDomain = "https://bhole.herokuapp.com";
-  // var serverDomain = "http://localhost:3001";
+  // var serverDomain = "https://bhole.herokuapp.com";
+  var serverDomain = "http://localhost:3001";
 
   app.controller('ArticleListController', ['$scope', '$routeParams', '$http', '$log', '$sce', function($scope, $routeParams, $http, $log, $sce) {
     var blog = this;
